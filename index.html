@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="commonBody">
+
+  <div class="container">
+    <header>
+      <h1 class="title">🌤️ Weather App</h1>
+      <p class="subtitle">Get real-time weather updates anywhere in the world</p>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <!-- Error Section -->
+    <section>
+      <p id="error" class="error"></p>
+    </section>
+
+    <!-- Weather Display -->
+    <section class="weather-box">
+      <h2 id="cityTitle" aria-live="polite">Weather Information</h2>
+      <div class="weather-info">
+        <div class="weather-item">
+          <h3>Temperature</h3>
+          <p id="temp"></p>
+          <small id="temp_meta"></small>
+        </div>
+        <div class="weather-item">
+          <h3>Humidity</h3>
+          <p id="humidity"></p>
+          <small id="humidity_meta"></small>
+        </div>
+        <div class="weather-item">
+          <h3>Wind</h3>
+          <p id="wind_speed"></p>
+          <small id="wind_meta"></small>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
